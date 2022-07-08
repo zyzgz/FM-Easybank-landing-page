@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +9,10 @@
 :root {
   --darkBlue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
-  --birghtCyan: hsl(192, 70%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
   --grayishBlue: hsl(233, 8%, 62%);
   --lightGrayishBlue: hsl(220, 16%, 96%);
-  --veryLightGrey: hsl(0, 0%, 98%);
+  --veryLightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -70,11 +72,6 @@ header {
   cursor: pointer;
 }
 
-span,
-p {
-  color: var(--grayishBlue);
-}
-
 .request_invite_btn {
   display: grid;
   border: none;
@@ -87,4 +84,123 @@ p {
   padding: 10px 40px;
   border-radius: 40px;
   cursor: pointer;
+}
+
+span,
+p {
+  color: var(--grayishBlue);
+}
+
+.details {
+  background-color: var(--veryLightGray);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.brief_details {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: translate(40%, -40%);
+}
+
+.brief_details h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.mockup {
+  background: url("./images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50px;
+  background-position-y: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-img {
+  width: 85%;
+  transform: translate(140px, -50px);
+}
+
+.reason {
+  background-color: var(--lightGrayishBlue);
+  padding: 100px 50px;
+}
+
+.benefit {
+  position: relative;
+  padding-bottom: 20px;
+  width: 45vw;
+}
+
+.benefit h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.benefit p {
+  color: var(--grayishBlue);
+}
+
+.reason .why_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.why_list > div img {
+  padding: 10px 0;
+}
+
+.why_list > div h2 {
+  padding: 15px 0;
+}
+
+.latest-articles {
+  padding: 100px 50px;
+  background: var(--veryLightGray);
+}
+
+.latest-articles h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.articles .article_card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.article_thumbnail {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 15px;
+}
+
+.article_card .postedBy {
+  margin: 10px 0;
+}
+
+.article_card .article-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.card_body {
+  padding: 20px;
 }
