@@ -13,3 +13,64 @@
   --veryLightGrey: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 }
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--white);
+  padding: 5px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a {
+  position: relative;
+  margin-left: 20px;
+  color: var(--grayishBlue);
+}
+
+.navigation li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+  width: 0;
+  height: 4px;
+  background: var(--grayishBlue);
+  transition: all 0.5s;
+}
+
+.navigation li a:hover::after {
+  width: 100%;
+}
+
+.dropdown-toggle {
+  display: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+span,
+p {
+  color: var(--grayishBlue);
+}
