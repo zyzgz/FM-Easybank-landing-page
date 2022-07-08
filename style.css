@@ -78,7 +78,7 @@ header {
   outline: none;
   all: unset;
   width: 7em;
-  background: linear-gradient(to right, hsl(136, 65%, 31%), hsl(192, 70%, 51%));
+  background: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
   color: var(--white);
   margin: 20px 0;
   padding: 10px 40px;
@@ -203,4 +203,67 @@ p {
 
 .card_body {
   padding: 20px;
+}
+
+footer {
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+.ft-one {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.social_link {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.social_link .logo-img {
+  color: var(--white);
+  padding-bottom: 20px;
+}
+
+.social_link_list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ft-nav-1 li,
+.ft-nav-2 li {
+  margin: 10px 0;
+}
+
+.ft-nav-1 li a,
+.ft-nav-2 li a {
+  color: var(--lightGrayishBlue);
+  font-size: 15px;
+}
+
+.ft-two {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.ft-two h4 {
+  color: var(--grayishBlue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
