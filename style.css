@@ -84,6 +84,7 @@ header {
   padding: 10px 40px;
   border-radius: 40px;
   cursor: pointer;
+  text-align: center;
 }
 
 span,
@@ -94,12 +95,10 @@ p {
 .details {
   background-color: var(--veryLightGray);
   display: grid;
+  color: var(--darkBlue);
   grid-template-columns: 40% 60%;
-  height: 90vh;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow-x: hidden;
 }
 
 .brief_details {
@@ -137,6 +136,7 @@ p {
 
 .benefit {
   position: relative;
+  color: var(--darkBlue);
   padding-bottom: 20px;
   width: 45vw;
 }
@@ -151,6 +151,7 @@ p {
 }
 
 .reason .why_list {
+  color: var(--darkBlue);
   display: flex;
   justify-content: space-between;
   gap: 1.5em;
@@ -165,6 +166,7 @@ p {
 }
 
 .latest-articles {
+  color: var(--darkBlue);
   padding: 100px 50px;
   background: var(--veryLightGray);
 }
@@ -268,6 +270,56 @@ footer ul {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 1100px) {
+  .details {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: var(--lightGrayishBlue);
+  }
+
+  .brief_details {
+    width: 100%;
+    transform: translate(0);
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brief_details h1 {
+    width: 95%;
+  }
+
+  .brief_details span {
+    font-size: 20px;
+  }
+
+  .mockup {
+    background-size: 80%;
+    background-position-x: 120px;
+    background-position-y: 30px;
+  }
+
+  .mockup-img {
+    width: 60%;
+    transform: translate(0, -90px);
+  }
+
+  .reason div {
+    width: 93%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .latest-articles h1 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 765px) {
   header {
     padding: 30px 40px;
@@ -319,33 +371,6 @@ footer ul {
     display: block;
   }
 
-  .details {
-    all: unset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    background: var(--lightGrayishBlue);
-  }
-
-  .brief_details {
-    width: 100%;
-    transform: translate(0);
-    padding: 0 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .brief_details h1 {
-    width: 95%;
-  }
-
-  .brief_details span {
-    font-size: 20px;
-  }
-
   .mockup {
     background-size: 100%;
     background-position-x: 120px;
@@ -366,19 +391,9 @@ footer ul {
     flex-direction: column;
   }
 
-  .reason div {
-    width: 93%;
-    margin: auto;
-    text-align: center;
-  }
-
   .reason div p {
     font-size: 20px;
     color: var(--grayishBlue);
-  }
-
-  .latest-articles {
-    flex-direction: column;
   }
 
   .articles {
